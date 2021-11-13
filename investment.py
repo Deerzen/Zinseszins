@@ -1,5 +1,7 @@
+# The library Matplotlib is used to visualize the calculation
 import matplotlib.pyplot as plt
 
+# Global variables
 m_inv = 0
 total_inv = 0
 total_inv_ar = []
@@ -8,6 +10,10 @@ months_ar = []
 profit_ar = []
 p_return = 0
 
+
+# This function calculates and prints monthly reports on total wealth,
+# total profit from the investment and the expected monthly income
+# from the investment for the chosen amount of months.
 def calculate():
     global m_inv
     global total_inv
@@ -34,6 +40,9 @@ def calculate():
         print("Total investment profit: " + str(round(profit, 2)))
         print("Monthly investment profit: " + str(round(m_profit, 2)))
 
+
+# This function graphs the calculated values and illustrates how wealth and 
+# investment profits are expected to develop over the chosen time frame
 def graph():
     global total_inv_ar
     global months_ar
@@ -48,6 +57,8 @@ def graph():
     plt.grid(True)
     plt.show()
 
+
+# Main loop
 while True:
     total_inv = int(input("Enter current total portfolio: "))
     m_inv = int(input("Enter monthly investment: "))
