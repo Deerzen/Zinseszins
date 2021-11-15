@@ -1,6 +1,6 @@
 # Zinseszins
- A simple script that illustrates the importance of compound interest
- for wealth creation.
+ A simple script that illustrates the importance of compound interest and
+ a long term perspective for wealth creation.
 
  This Python script can help to plan wealth creation over longer periods.
  To calculate the expected development of the assets the script asks for
@@ -14,5 +14,5 @@
  the growth of total wealth and investment profit.
 
  The script currently does not take inflation into consideration. However this
- flaw should be circumvented by subtracting the expected yearly inflation rate
+ flaw could be circumvented by subtracting the expected yearly inflation rate
  from the expected yearly return in percent.
