@@ -1,6 +1,12 @@
-# Zinseszins
- A simple script that illustrates the importance of compound interest
- and a long term perspective for wealth creation.
+<div align=center>
+<img src="https://raw.githubusercontent.com/Deerzen/Zinseszins/main/zinseszins.png" width="50%" height="50%">
+</div>
+
+## Visualize easily how your investments are projected to develop in the future.
+
+ A simple script that illustrates the importance of compound interest,
+ a long term perspective for wealth creation and the advantage
+ of a large initial investment.
 
 ### Project the growth of wealth
  This Python script can help to plan wealth creation over longer periods.
