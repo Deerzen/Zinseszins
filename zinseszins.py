@@ -23,9 +23,7 @@ st.title("Zinseszins")
 i1 = st.number_input(
     "Enter value of current portfolio", min_value=0, value=1000, key="1"
 )
-i2 = st.number_input(
-    "Enter monthly investment", min_value=0, value=500, key="2"
-)
+i2 = st.number_input("Enter monthly investment", min_value=0, value=500, key="2")
 i3 = st.number_input(
     "Enter expected yearly return in percent", min_value=0, value=10, key="3"
 )
@@ -38,13 +36,6 @@ i4 = st.number_input("Enter duration in months", min_value=1, value=60, key="4")
 # The arrays are then transformed into Pandas DataFrames
 # and into downloadable data which are returned by the function.
 def calculate():
-    values = {
-        "m_inv": 0,
-        "total_inv": 0,
-        "months": 0,
-        "p_return": 0,
-        "profit": 0,
-    }
     arrays = {
         "total_inv_ar": [],
         "months_ar": [],
@@ -52,10 +43,7 @@ def calculate():
         "monthly_profit_ar": [],
     }
 
-    values["total_inv"] = i1
-    values["m_inv"] = i2
-    values["p_return"] = i3
-    values["months"] = i4
+    values = {"profit": 0, "total_inv": i1, "m_inv": i2, "p_return": i3, "months": i4}
 
     for i in range(values["months"]):
         former_balance = values["total_inv"]
@@ -90,11 +78,9 @@ def calculate():
 # and the previous month in percent
 def delta(data, slider_value, column):
     if slider_value > 1:
-        difference = (
-            data.loc[slider_value, column] - data.loc[slider_value - 1, column]
-        )
+        difference = data.loc[slider_value, column] - data.loc[slider_value - 1, column]
         percentage_dif = difference * 100 / data.loc[slider_value, column]
-        return str(round(percentage_dif, 2)) + "%"
+        return f"{str(round(percentage_dif, 2))}%"
     else:
         return "0.00%"
 
@@ -129,9 +115,7 @@ def update_display_data():
         delta(display_data[1], sv, "Monthly Profit"),
     )
     st.table(display_data[1])
-    st.download_button(
-        "Download CSV", display_data[2], "Zinseszins.csv", "text/csv"
-    )
+    st.download_button("Download CSV", display_data[2], "Zinseszins.csv", "text/csv")
 
 
 if __name__ == "__main__":
