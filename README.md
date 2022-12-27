@@ -2,27 +2,18 @@
 <img src="https://raw.githubusercontent.com/Deerzen/Zinseszins/main/zinseszins.png" width="50%" height="50%">
 </div>
 
-## Easily visualize how your investments are projected to develop in the future.
+### Visualize the Future Growth of Your Investments
 
- A simple script that illustrates the importance of compound interest,
- a long term perspective for wealth creation and the advantage
- of a large initial investment.
+Easily visualize how your investments are projected to develop in the future with this simple Python script. The script helps you plan wealth creation over longer periods by calculating the expected total wealth, total investment profit, and monthly income from the investment based on initial investment, planned monthly contributions, expected yearly return, and time frame.
 
-### Project the growth of wealth
- This Python script can help to plan wealth creation over longer periods.
- To calculate the expected development of the assets,
- the script asks for the initial investment, the planned monthly contributions,
- the expected yearly return in percent,
- and the time frame in months. On this basis, the expected total wealth,
- the total investment profit, and the monthly income from the investment
- for every month within the time frame will be calculated.
+### GUI for Data Input and Visualization
 
-### Easy data input and coprehensive visualization
- Relying on the Streamlit library, the GUI for data input and visualization,
- a graph will be shown that illustrates the growth of total wealth
- and investment profit. Beyond that, you can inspect detailed data 
- for every month and download a CSV file. 
+The script uses the Streamlit library to provide a GUI for data input and visualization. This includes a graph that illustrates the growth of total wealth and investment profit, as well as detailed data for every month. You can also download a CSV file with all of the data.
 
- The script currently does not take inflation into consideration.
+### Considerations
+
+Please note that the script currently does not take inflation into consideration.
+
+### Try the App Online
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/deerzen/zinseszins/main/zinseszins.py)
